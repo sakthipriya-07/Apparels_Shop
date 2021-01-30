@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'shop/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<head>
+
+
+    <link rel="stylesheet" href="{% static "css/styles.css" %}"/>
+
+    <meta charset="utf-8">
+    <title>Stitch Master</title>
+    <script src="https://kit.fontawesome.com/389be30571.js" crossorigin="anonymous"></script>
+
+</head>
+<div class="d-flex justify-content-center">
+<center><h1>Trendy</h1></center>
+<center><img src="{% static "img/stitchmaster_logo.png" %}" alt="StitchMasterLogo" width="204"><img
+        src="{% static "img/stitchmaster_logo.png" %}" alt="StitchMasterLogo" width="204"><img
+        src="{% static "img/stitchmaster_logo.png" %}" alt="StitchMasterLogo" width="204"><img
+        src="{% static "img/stitchmaster_logo.png" %}" alt="StitchMasterLogo" width="204"><img
+        src="{% static "img/stitchmaster_logo.png" %}" alt="StitchMasterLogo" width="204"><img
+        src="{% static "img/stitchmaster_logo.png" %}" alt="StitchMasterLogo" width="204"></center>
+<center><h2>Best Clothing Store In Town</h2></center>
+<nav2>
+    <center>
+        <ul class="nav2">
+            <li><a href="{% url 'users:login' %}">Sign in/register </a></li>
+            <li><a href="{% url 'shop:product_list' %}">Shop Now </a></li>
+        </ul>
+    </center>
+
+</nav2>
+
+    </div>
+       <center><h3>JULY 4TH SALE! Save 20% Off Your Order by using: "JULY4TH" coupon code</h3></center>
+
+
+{% endblock %}
+
+</html>

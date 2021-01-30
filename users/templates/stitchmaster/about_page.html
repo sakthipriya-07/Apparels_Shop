@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'shop/base.html' %}
+{%load static %}
+{% block content %}
+
+<h1 class="headings"> OUR STORY</h1>
+<div id="main-container">
+    <div id="about-container">
+        <div id="about-image-container">
+            <img src={% static "img/whiteTshirt.jpg" %} alt="whiteTshirt">
+        </div>
+        <div id="about-description">
+            <h4>Welcome to StitchMaster!</h4>
+            <p>StitchMaster is a quaint little store in the heart of Omaha's shopping hub housing a refined
+                amalgamation of traditional techniques, rich textiles and progressive silhouettes – true traditions
+                that weave into ethnic contemporary. At StitchMaster, we work with different textile designers, design
+                studios and artisans across United States who have a passion for their craft and for the rich history
+                of our country, which directly translates into their products. Thank you for stopping by to know more
+                about us; If you’d like to touch the fabrics, feel the love in the products or just chat, come meet us
+                at our store!
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+</html>
